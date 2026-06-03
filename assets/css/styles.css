@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nav_header {
+    display: flex;
+    background-color: #2D6A4F;
+    justify-content: space-between;
+    height: 64px;
+    padding: 24px;
+}
+
+#nutribox_logo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 22px;
+    align-self: center;
+}
+
+.menu_superior {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 32px;
+}
+
+.item_menu_superior {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+
+}
+.item_menu_superior:hover { 
+    color: rgb(255, 179, 0); 
+}
+
+/*.alinhamento_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 1100px;
+    padding: 96px;
+    justify-content: center;
+    align-content: center;
+}
+
+#titulo_hero {
+    font-size: 52px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    align-self: center;
+    margin-bottom: 24px;
+}
+
+#texto_hero {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: orange;
+    font-size: 16px;
+    align-self: center;
+    margin-bottom: 12px;
+}
+
+#subtitulo_hero {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.button_hero {
+    background-color: #52b788;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 16px 40px;
+    border-radius: 6px;
+}
+
+/*
+    porque precisei usar o align-self:center se ja 
+tinha usado o align-content no pai para centralizar 
+os itens no container
+    porque eles sem align self eles ocuparam a linha toda
+ ja que sao item de um flex box
+    como faco pra quebrar linhas sem usar o BR (Talves usar o SPAM!) tentar amanha
+    E porque a proporcao da tela ta tao diferente da imagem
+ que foi mandada junto com o projeto.
+ */
