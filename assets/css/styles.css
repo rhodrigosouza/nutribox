@@ -131,9 +131,10 @@ os itens no container
     gap: 24px;
     padding: 48px;
     justify-content: center;
+    width: 1100px;
  }
 
- .card {
+ .card_beneficios {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -141,6 +142,8 @@ os itens no container
     border: 1px solid #E8E8E4;
     border-radius: 8px;
     flex-wrap: wrap;
+    flex: 1;
+  
  }
 
  .emoji {
@@ -148,7 +151,7 @@ os itens no container
     font-size: 40px;
  }
 
- .titulo_card {
+ .titulo_card_beneficios {
     margin-bottom: 6px;
     font-size: 17px;
     font-family: "Poppins", sans-serif;
@@ -157,10 +160,114 @@ os itens no container
     color: #2D6A4F;
  }
 
- .descricao_card {
+ .descricao_card_beneficios {
     font-size: 14px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #52b788;
+ }
+
+ .cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F7F2;
+    padding: 80px;
+    
+ }
+
+ .titulo_cardapio {
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2D6A4F;
+    padding-bottom: 12px;
+ }
+
+ .subtitulo_cardapio {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #666666;
+    font-size: 18px;
+    padding-bottom: 48px;
+ }
+ 
+ .cards_cardapio {
+    display: flex;
+    gap: 24px;
+ }
+
+ .card_cardapio {
+    display: flex;
+    flex-direction: column;
+    width: 300px;  
+    border-radius: 12px;
+    border: 1px transparent black;
+    overflow: hidden;
+    background-color: white;
+ }
+
+ .imagem_card_cardapio{
+    height: 200px;
+    object-fit: cover;
+ }
+
+ .parte_inferior_card {
+    display: flex;
+    padding: 24px;
+    align-items: first baseline;
+ }
+
+ .titulo_card_cardapio{
+
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+ }
+
+ .parte_inferior_card_direita {
+    background-color: #52B788;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 2px;
+    padding: 10px;
+ }
+ 
+ .descricao_prato {
+    list-style: none;
+    padding-bottom: 16px;
+ }
+
+ .item_descricao_prato::before {
+    content: "✓ "; 
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: green;     
+    margin-right: 10px;
+ }
+
+ .item_descricao_prato {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #555555;
+ }
+
+ .preco_prato {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2D6A4F;
  }
