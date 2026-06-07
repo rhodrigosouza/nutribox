@@ -199,6 +199,7 @@ os itens no container
  .cards_cardapio {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
  }
 
  .card_cardapio {
@@ -209,6 +210,7 @@ os itens no container
     border: 1px transparent black;
     overflow: hidden;
     background-color: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
  }
 
  .imagem_card_cardapio{
@@ -220,9 +222,15 @@ os itens no container
     display: flex;
     padding: 24px;
     align-items: first baseline;
+    flex-shrink: 0;
+    justify-content: space-between;
  }
 
- .titulo_card_cardapio{
+ .parte_inferior_card_esquerda{
+   flex-shrink: 1;
+ }
+
+.titulo_card_cardapio{
 
     padding-bottom: 12px;
     font-size: 20px;
@@ -231,7 +239,7 @@ os itens no container
     font-style: normal;
  }
 
- .parte_inferior_card_direita {
+ .badge_calorias {
     background-color: #52B788;
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -239,8 +247,8 @@ os itens no container
     color: white;
     border-radius: 20px;
     font-size: 13px;
-    padding: 2px;
-    padding: 10px;
+    padding: 3px;
+    flex-shrink: 2;
  }
  
  .descricao_prato {
@@ -262,6 +270,8 @@ os itens no container
     font-weight: 400;
     font-style: normal;
     color: #555555;
+    font-size: 14px;
+
  }
 
  .preco_prato {
@@ -271,3 +281,5 @@ os itens no container
     font-style: normal;
     color: #2D6A4F;
  }
+
+
